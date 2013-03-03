@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://kura-lab.github.com/techblog/sitemap.xml 
