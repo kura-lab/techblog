@@ -9,9 +9,10 @@
   <meta name="author" content="kura">
 
   
-  <meta name="description" content="タイトル 行末にスペースを2つ入れると
-改行する。 空行を入れると段落がわかれる。 使い方 コード &lt;script type="text/javascript" src="jquery.min.js"&gt;&lt;/script&gt;
-&lt;script type="text/ &hellip;">
+  <meta name="description" content="行末にスペースを2つ入れると
+改行する。 空行を入れると段落がわかれる。 使い方 コード &lt;?php
+echo "Hello world!"; function hoge(param, ...) { return "hoge";
+} param : パラメータ の説明 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -95,9 +96,7 @@
   </header>
 
 
-  <div class="entry-content"><h1>タイトル</h1>
-
-<p>行末にスペースを2つ入れると<br/>
+  <div class="entry-content"><p>行末にスペースを2つ入れると<br/>
 改行する。</p>
 
 <p>空行を入れると段落がわかれる。</p>
@@ -106,20 +105,16 @@
 
 <h3>コード</h3>
 
-<pre><code>&lt;script type="text/javascript" src="jquery.min.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript"&gt;
-$(function() {
-    alert($); /* 先頭に4文字のスペース、
-                 もしくはタブを挿入します */
-    });
-&lt;/script&gt;
+<pre><code>&lt;?php
+echo "Hello world!";
 
-def hoge(param, ...)
+function hoge(param, ...) {
+    return "hoge";
+}
 </code></pre>
 
 <ul>
-<li><code>param</code> :<br/>
-<em>パラメータ</em> の説明</li>
+<li><code>param</code> :  <em>パラメータ</em> の説明</li>
 </ul>
 
 
@@ -131,27 +126,25 @@ def hoge(param, ...)
 <li><a href="http://example.com/" title="example.com">example.com</a></li>
 <li><img src="http://github.com/github.png" title="画像" alt="octocat" /></li>
 <li><a href="http://example.com/" title="インデックス型のリンク">example.com</a></li>
-<li><p><a href="https://github.com/"><img src="http://github.com/github.png" title="インデックス型の画像" alt="octocat" /></a></p>
-
-<ol>
-<li><a href="http://example.com/" title="example.com">example.com</a></li>
-<li><img src="http://github.com/github.png" title="画像" alt="octocat" /></li>
-<li><a href="http://example.com/" title="インデックス型のリンク">example.com</a></li>
 <li><a href="https://github.com/"><img src="http://github.com/github.png" title="インデックス型の画像" alt="octocat" /></a></li>
 </ol>
 
 
-<p>  <a href="http://example.com/" title="インデックス型のリンク">link</a>: http://example.com/ &#8220;インデックス型リンク&#8221;
-  <a href="http://github.com/github.png" title="インデックス型の画像">image</a>: http://github.com/github.png &#8220;インデックス型画像&#8221;</p></li>
-</ol>
+<p><code>1. [example.com](http://example.com/ "example.com")</code></p>
 
+<p><code>* ![octocat](http://github.com/github.png "画像")</code></p>
+
+<p><code>2. [example.com][link]</code></p>
+
+<p><code>- [![octocat][image]](https://github.com/)</code></p>
+
+<pre><code>[link]: http://example.com/ "インデックス型リンク"
+[image]: http://github.com/github.png "インデックス型画像"
+</code></pre>
 
 <h3>引用</h3>
 
-<blockquote><p>引用です。</p>
-
-<blockquote><p>スペースを挟んで <code>&gt;</code> を重ねると、引用の中で引用ができますが、
-GitHubの場合、1行前に空の引用が無いと、正しくマークアップされません。</p></blockquote></blockquote>
+<blockquote><p>引用です。</p></blockquote>
 </div>
   
   
