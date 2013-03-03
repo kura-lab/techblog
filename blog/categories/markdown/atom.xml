@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Kura's Tech Blog]]></title>
-  <link href="http://kura-lab.github.com/techblog/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Markdown | Kura's Tech Blog]]></title>
+  <link href="http://kura-lab.github.com/techblog/blog/categories/markdown/atom.xml" rel="self"/>
   <link href="http://kura-lab.github.com/techblog/"/>
   <updated>2013-03-03T23:22:10+09:00</updated>
   <id>http://kura-lab.github.com/techblog/</id>
@@ -64,8 +64,8 @@ def hoge(param, ...)
 </ol>
 
 
-<p>  <a href="http://example.com/" title="インデックス型のリンク">link</a>: http://example.com/ &#8220;インデックス型リンク&#8221;
-  <a href="http://github.com/github.png" title="インデックス型の画像">image</a>: http://github.com/github.png &#8220;インデックス型画像&#8221;</p></li>
+<p>  <a href="http://example.com/" title="インデックス型のリンク">link</a>: http://example.com/ "インデックス型リンク"
+  <a href="http://github.com/github.png" title="インデックス型の画像">image</a>: http://github.com/github.png "インデックス型画像"</p></li>
 </ol>
 
 
