@@ -9,10 +9,9 @@
   <meta name="author" content="kura">
 
   
-  <meta name="description" content="行末にスペースを2つ入れると
-改行する。 空行を入れると段落がわかれる。 使い方 コード &lt;?php
-echo "Hello world!"; function hoge(param, ...) { return "hoge";
-} param : パラメータ の説明 &hellip;">
+  <meta name="description" content="Ruby+Octopressの環境を整えたので、記事の追加とデプロイまでをまとめておく。 環境構築 詳しい設定については以下を参照。 Octopressのインストールから運用管理まで
+Octopressをためしてみる
+octopressでgithubにブログ開設 記事を新規作成 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -67,6 +66,82 @@ echo "Hello world!"; function hoge(param, ...) { return "hoge";
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/techblog/blog/2013/03/09/octopress-manual/">Octopress運用マニュアル</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-09T03:15:00+09:00" pubdate data-updated="true">Mar 9<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Ruby+Octopressの環境を整えたので、記事の追加とデプロイまでをまとめておく。</p>
+
+<h3>環境構築</h3>
+
+<p>詳しい設定については以下を参照。</p>
+
+<ul>
+<li><a href="http://tokkonopapa.github.com/blog/2011/12/30/octopress-on-github-and-bitbucket/">Octopressのインストールから運用管理まで</a></li>
+<li><a href="http://ktsugita.github.com/blog/2013/02/17/octopress1/">Octopressをためしてみる</a></li>
+<li><a href="http://hnakamur.github.com/blog/2012/03/03/how-to-setup-octopress/">octopressでgithubにブログ開設</a></li>
+</ul>
+
+
+<h3>記事を新規作成</h3>
+
+<p>octopressディレクトリで以下のコマンドを実行。</p>
+
+<pre><code>rake new_post['post title']
+</code></pre>
+
+<p>source/_post/以下に.markdownファイルが出来るので記事を書く</p>
+
+<h3>HTML生成</h3>
+
+<p>記事が書き終わったらHTMLを以下のコマンドで生成。</p>
+
+<pre><code>rake generate
+</code></pre>
+
+<h3>記事をリリース</h3>
+
+<p>以下のコマンドでリリース（入稿）</p>
+
+<pre><code>rake deploy
+</code></pre>
+
+<p>HTML生成とリリースを同時にするには<code>rake gen_deploy</code>を実行。</p>
+
+<p>リリースができて内容の確認ができたらgithubへpushするのを忘れないように！</p>
+
+<p>以上</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -163,6 +238,10 @@ function hoge(param, ...) {
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/techblog/blog/2013/03/09/octopress-manual/">Octopress運用マニュアル</a>
+      </li>
     
       <li class="post">
         <a href="/techblog/blog/2013/03/03/markdown-sample/">Markdown Sample</a>

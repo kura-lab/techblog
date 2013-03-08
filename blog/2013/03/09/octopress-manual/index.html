@@ -5,11 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: Markdown - Kura's Tech Blog</title>
+  <title>Octopress運用マニュアル - Kura's Tech Blog</title>
   <meta name="author" content="kura">
 
   
-  <meta name="description" content="Category: Markdown">
+  <meta name="description" content="Ruby+Octopressの環境を整えたので、記事の追加とデプロイまでをまとめておく。 環境構築 詳しい設定については以下を参照。 Octopressのインストールから運用管理まで
+Octopressをためしてみる
+octopressでgithubにブログ開設 記事を新規作成 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://kura-lab.github.com/techblog/blog/categories/markdown/">
+  <link rel="canonical" href="http://kura-lab.github.com/techblog/blog/2013/03/09/octopress-manual/">
   <link href="/techblog/favicon.png" rel="icon">
   <link href="/techblog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/techblog/javascripts/modernizr-2.0.js"></script>
@@ -63,35 +65,124 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Markdown</h1>
+    
+      <h1 class="entry-title">Octopress運用マニュアル</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-09T03:15:00+09:00" pubdate data-updated="true">Mar 9<span>th</span>, 2013</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><p>Ruby+Octopressの環境を整えたので、記事の追加とデプロイまでをまとめておく。</p>
 
-  
-  <h2>2013</h2>
+<h3>環境構築</h3>
 
-<article>
-  
-<h1><a href="/techblog/blog/2013/03/03/markdown-sample/">Markdown Sample</a></h1>
-<time datetime="2013-03-03T21:56:00+09:00" pubdate><span class='month'>Mar</span> <span class='day'>03</span> <span class='year'>2013</span></time>
+<p>詳しい設定については以下を参照。</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/techblog/blog/categories/markdown/'>Markdown</a></span>
-</footer>
+<ul>
+<li><a href="http://tokkonopapa.github.com/blog/2011/12/30/octopress-on-github-and-bitbucket/">Octopressのインストールから運用管理まで</a></li>
+<li><a href="http://ktsugita.github.com/blog/2013/02/17/octopress1/">Octopressをためしてみる</a></li>
+<li><a href="http://hnakamur.github.com/blog/2012/03/03/how-to-setup-octopress/">octopressでgithubにブログ開設</a></li>
+</ul>
 
 
-</article>
+<h3>記事を新規作成</h3>
 
+<p>octopressディレクトリで以下のコマンドを実行。</p>
+
+<pre><code>rake new_post['post title']
+</code></pre>
+
+<p>source/_post/以下に.markdownファイルが出来るので記事を書く</p>
+
+<h3>HTML生成</h3>
+
+<p>記事が書き終わったらHTMLを以下のコマンドで生成。</p>
+
+<pre><code>rake generate
+</code></pre>
+
+<h3>記事をリリース</h3>
+
+<p>以下のコマンドでリリース（入稿）</p>
+
+<pre><code>rake deploy
+</code></pre>
+
+<p>HTML生成とリリースを同時にするには<code>rake gen_deploy</code>を実行。</p>
+
+<p>リリースができて内容の確認ができたらgithubへpushするのを忘れないように！</p>
+
+<p>以上</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">kura</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-09T03:15:00+09:00" pubdate data-updated="true">Mar 9<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/techblog/blog/categories/octopress/'>Octopress</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://kura-lab.github.com/techblog/blog/2013/03/09/octopress-manual/" data-via="kura_lab" data-counturl="http://kura-lab.github.com/techblog/blog/2013/03/09/octopress-manual/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/techblog/blog/2013/03/03/markdown-sample/" title="Previous Post: Markdown Sample">&laquo; Markdown Sample</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>

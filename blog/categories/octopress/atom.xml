@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Kura's Tech Blog]]></title>
-  <link href="http://kura-lab.github.com/techblog/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Octopress | Kura's Tech Blog]]></title>
+  <link href="http://kura-lab.github.com/techblog/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://kura-lab.github.com/techblog/"/>
   <updated>2013-03-09T03:43:31+09:00</updated>
   <id>http://kura-lab.github.com/techblog/</id>
@@ -59,63 +59,6 @@
 <p>リリースができて内容の確認ができたらgithubへpushするのを忘れないように！</p>
 
 <p>以上</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Markdown Sample]]></title>
-    <link href="http://kura-lab.github.com/techblog/blog/2013/03/03/markdown-sample/"/>
-    <updated>2013-03-03T21:56:00+09:00</updated>
-    <id>http://kura-lab.github.com/techblog/blog/2013/03/03/markdown-sample</id>
-    <content type="html"><![CDATA[<p>行末にスペースを2つ入れると<br/>
-改行する。</p>
-
-<p>空行を入れると段落がわかれる。</p>
-
-<h2>使い方</h2>
-
-<h3>コード</h3>
-
-<pre><code>&lt;?php
-echo "Hello world!";
-
-function hoge(param, ...) {
-    return "hoge";
-}
-</code></pre>
-
-<ul>
-<li><code>param</code> :  <em>パラメータ</em> の説明</li>
-</ul>
-
-
-<p>パラメータはバッククォートでくくる。</p>
-
-<h3>画像</h3>
-
-<ol>
-<li><a href="http://example.com/" title="example.com">example.com</a></li>
-<li><img src="http://github.com/github.png" title="画像" alt="octocat" /></li>
-<li><a href="http://example.com/" title="インデックス型のリンク">example.com</a></li>
-<li><a href="https://github.com/"><img src="http://github.com/github.png" title="インデックス型の画像" alt="octocat" /></a></li>
-</ol>
-
-
-<p><code>1. [example.com](http://example.com/ "example.com")</code></p>
-
-<p><code>* ![octocat](http://github.com/github.png "画像")</code></p>
-
-<p><code>2. [example.com][link]</code></p>
-
-<p><code>- [![octocat][image]](https://github.com/)</code></p>
-
-<pre><code>[link]: http://example.com/ "インデックス型リンク"
-[image]: http://github.com/github.png "インデックス型画像"
-</code></pre>
-
-<h3>引用</h3>
-
-<blockquote><p>引用です。</p></blockquote>
 ]]></content>
   </entry>
   
