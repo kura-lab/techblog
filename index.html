@@ -116,8 +116,7 @@ Sublime Text 2 Mou Mac版のみの提供。以下のサイトよりダウンロ�
 <h3>感想</h3>
 
 <ul>
-<li>左に編集画面、右側にプレビューが表示される。<br/>
-個人的には左右逆の方がいい感じなのだが。</li>
+<li>左に編集画面、右側にプレビューが表示される。個人的には左右逆の方がいい感じなのだが。</li>
 <li>編集がリアルタイムに反映されて確認することができる。</li>
 <li>タイトルや箇条書きなどハイライトもされるのでみやすい。</li>
 </ul>
@@ -139,10 +138,16 @@ Sublime Text 2 Mou Mac版のみの提供。以下のサイトよりダウンロ�
 <ul>
 <li>アプリを起動</li>
 <li>View > Show Console</li>
-<li><p>以下のコマンドで「Package Console」をインストール</p>
+</ul>
 
-<p>  import urllib2,os;pf=&#8217;Package Control.sublime-package&#8217;;ipp=sublime.installed_packages_path();os.makedirs(ipp) if not os.path.exists(ipp) else None;open(os.path.join(ipp,pf),&#8217;wb&#8217;).write(urllib2.urlopen(&#8216;http://sublime.wbond.net/&#8217;+pf.replace(&#8217; &#8216;,&#8217;%20&#8217;)).read())</p></li>
-<li><p>再起動して完了</p></li>
+
+<p>以下のコマンドで「Package Console」をインストール</p>
+
+<pre><code>import urllib2,os;pf='Package Control.sublime-package';ipp=sublime.installed_packages_path();os.makedirs(ipp) if not os.path.exists(ipp) else None;open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read())
+</code></pre>
+
+<ul>
+<li>再起動して完了</li>
 </ul>
 
 
@@ -159,11 +164,13 @@ Sublime Text 2 Mou Mac版のみの提供。以下のサイトよりダウンロ�
 
 <ul>
 <li>Sublime Text 2 > Preferences > Key Bindings - User</li>
-<li><p>以下を設定</p>
-
-<p>  [ { &#8220;keys&#8221;: [&#8220;alt+m&#8221;], &#8220;command&#8221;: &#8220;markdown_preview&#8221;, &#8220;args&#8221;: {&#8220;target&#8221;: &#8220;browser&#8221;} }]</p></li>
 </ul>
 
+
+<p>以下を設定</p>
+
+<pre><code>[ { "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser"} }]
+</code></pre>
 
 <h3>感想</h3>
 

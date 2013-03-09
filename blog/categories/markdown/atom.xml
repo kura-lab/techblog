@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Markdown | Kura's Tech Blog]]></title>
   <link href="http://kura-lab.github.com/techblog/blog/categories/markdown/atom.xml" rel="self"/>
   <link href="http://kura-lab.github.com/techblog/"/>
-  <updated>2013-03-09T16:59:05+09:00</updated>
+  <updated>2013-03-09T17:05:33+09:00</updated>
   <id>http://kura-lab.github.com/techblog/</id>
   <author>
     <name><![CDATA[kura]]></name>
@@ -40,8 +40,7 @@
 <h3>感想</h3>
 
 <ul>
-<li>左に編集画面、右側にプレビューが表示される。<br/>
-個人的には左右逆の方がいい感じなのだが。</li>
+<li>左に編集画面、右側にプレビューが表示される。個人的には左右逆の方がいい感じなのだが。</li>
 <li>編集がリアルタイムに反映されて確認することができる。</li>
 <li>タイトルや箇条書きなどハイライトもされるのでみやすい。</li>
 </ul>
@@ -63,10 +62,16 @@
 <ul>
 <li>アプリを起動</li>
 <li>View > Show Console</li>
-<li><p>以下のコマンドで「Package Console」をインストール</p>
+</ul>
 
-<p>  import urllib2,os;pf='Package Control.sublime-package';ipp=sublime.installed_packages_path();os.makedirs(ipp) if not os.path.exists(ipp) else None;open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read())</p></li>
-<li><p>再起動して完了</p></li>
+
+<p>以下のコマンドで「Package Console」をインストール</p>
+
+<pre><code>import urllib2,os;pf='Package Control.sublime-package';ipp=sublime.installed_packages_path();os.makedirs(ipp) if not os.path.exists(ipp) else None;open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read())
+</code></pre>
+
+<ul>
+<li>再起動して完了</li>
 </ul>
 
 
@@ -83,11 +88,13 @@
 
 <ul>
 <li>Sublime Text 2 > Preferences > Key Bindings - User</li>
-<li><p>以下を設定</p>
-
-<p>  [ { "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser"} }]</p></li>
 </ul>
 
+
+<p>以下を設定</p>
+
+<pre><code>[ { "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser"} }]
+</code></pre>
 
 <h3>感想</h3>
 
