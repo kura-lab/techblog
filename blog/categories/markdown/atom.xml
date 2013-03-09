@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Markdown | Kura's Tech Blog]]></title>
   <link href="http://kura-lab.github.com/techblog/blog/categories/markdown/atom.xml" rel="self"/>
   <link href="http://kura-lab.github.com/techblog/"/>
-  <updated>2013-03-09T03:43:31+09:00</updated>
+  <updated>2013-03-09T16:59:05+09:00</updated>
   <id>http://kura-lab.github.com/techblog/</id>
   <author>
     <name><![CDATA[kura]]></name>
@@ -12,6 +12,103 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Markdownエディタ]]></title>
+    <link href="http://kura-lab.github.com/techblog/blog/2013/03/09/markdown-editors/"/>
+    <updated>2013-03-09T16:10:00+09:00</updated>
+    <id>http://kura-lab.github.com/techblog/blog/2013/03/09/markdown-editors</id>
+    <content type="html"><![CDATA[<p>OctopressをつかってMarkdown形式でブログがかけるようになったので、エディタについても少し調べてみた。</p>
+
+<p>以下の2つのエディタの導入方法と使ってみての感想をまとめる</p>
+
+<ul>
+<li><a href="http://mouapp.com/">Mou</a></li>
+<li><a href="http://www.sublimetext.com/dev">Sublime Text 2</a></li>
+</ul>
+
+
+<h1>Mou</h1>
+
+<p>Mac版のみの提供。以下のサイトよりダウンロードして起動してすぐ使える。</p>
+
+<ul>
+<li><a href="http://mouapp.com/">http://mouapp.com/</a></li>
+</ul>
+
+
+<h3>感想</h3>
+
+<ul>
+<li>左に編集画面、右側にプレビューが表示される。<br/>
+個人的には左右逆の方がいい感じなのだが。</li>
+<li>編集がリアルタイムに反映されて確認することができる。</li>
+<li>タイトルや箇条書きなどハイライトもされるのでみやすい。</li>
+</ul>
+
+
+<h1>Sublime Text 2</h1>
+
+<p>Mac版、Win版、Linux版を提供。フリー版は開発中のものでいろいろポップアップ通知がでる。正式版は有料（$70）。</p>
+
+<p>以下のサイトよりダウンロードする。（今回はMacのフリー版を試してみる）</p>
+
+<ul>
+<li><a href="http://www.sublimetext.com/dev">http://www.sublimetext.com/dev</a></li>
+</ul>
+
+
+<p>Markdown用のプラグインを入れるためにプラグイン環境をインストールする。</p>
+
+<ul>
+<li>アプリを起動</li>
+<li>View > Show Console</li>
+<li><p>以下のコマンドで「Package Console」をインストール</p>
+
+<p>  import urllib2,os;pf='Package Control.sublime-package';ipp=sublime.installed_packages_path();os.makedirs(ipp) if not os.path.exists(ipp) else None;open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read())</p></li>
+<li><p>再起動して完了</p></li>
+</ul>
+
+
+<p>Markdown編集用のプラグインをインストール</p>
+
+<ul>
+<li>Tools > Command Palette</li>
+<li>コマンドラインに<code>Package Control:Install Package</code>を入力</li>
+<li>「Markdown Preview」を検索、選択してインストール</li>
+</ul>
+
+
+<p><code>alt + m</code>のショートカットでプレビューできるようにキーバインドを設定</p>
+
+<ul>
+<li>Sublime Text 2 > Preferences > Key Bindings - User</li>
+<li><p>以下を設定</p>
+
+<p>  [ { "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser"} }]</p></li>
+</ul>
+
+
+<h3>感想</h3>
+
+<ul>
+<li>Markdown以外の言語もプラグインをいれるとつかえるようになる。<br/>
+環境づくりが少しめんどくさいが、整ってしまえばいろいろカスタマイズできるのでよい。</li>
+<li>プレビューはブラウザが立ち上がりファイルを保存して、リロードすると確認できる。</li>
+<li>フリー版でも十分利用できる。</li>
+</ul>
+
+
+<h1>まとめ</h1>
+
+<p>MouとSublime Text2でMarkdownを編集できるところまでの準備についてまとめた。<br/>
+プレビューの方式がMouはアプリ上で、Sublime Text2はブラウザ上とことなるが、どちらも十分便利なので、好みによって選べば良い。</p>
+
+<p>ちなみにこの記事はSublime Text2で書いている。</p>
+
+<p>以上</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Markdown Sample]]></title>

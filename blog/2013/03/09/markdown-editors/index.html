@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Kura's Tech Blog</title>
+  <title>Markdownエディタ - Kura's Tech Blog</title>
   <meta name="author" content="kura">
 
   
@@ -19,7 +19,7 @@ Sublime Text 2 Mou Mac版のみの提供。以下のサイトよりダウンロ�
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://kura-lab.github.com/techblog/">
+  <link rel="canonical" href="http://kura-lab.github.com/techblog/blog/2013/03/09/markdown-editors/">
   <link href="/techblog/favicon.png" rel="icon">
   <link href="/techblog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/techblog/javascripts/modernizr-2.0.js"></script>
@@ -63,15 +63,12 @@ Sublime Text 2 Mou Mac版のみの提供。以下のサイトよりダウンロ�
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/techblog/blog/2013/03/09/markdown-editors/">Markdownエディタ</a></h1>
+      <h1 class="entry-title">Markdownエディタ</h1>
     
     
       <p class="meta">
@@ -94,7 +91,7 @@ Sublime Text 2 Mou Mac版のみの提供。以下のサイトよりダウンロ�
   </header>
 
 
-  <div class="entry-content"><p>OctopressをつかってMarkdown形式でブログがかけるようになったので、エディタについても少し調べてみた。</p>
+<div class="entry-content"><p>OctopressをつかってMarkdown形式でブログがかけるようになったので、エディタについても少し調べてみた。</p>
 
 <p>以下の2つのエディタの導入方法と使ってみての感想をまとめる</p>
 
@@ -184,98 +181,16 @@ Sublime Text 2 Mou Mac版のみの提供。以下のサイトよりダウンロ�
 
 <p>以上</p>
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/techblog/blog/2013/03/09/octopress-manual/">Octopress運用マニュアル</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
 
+<span class="byline author vcard">Posted by <span class="fn">kura</span></span>
 
-<time datetime="2013-03-09T03:15:00+09:00" pubdate data-updated="true">Mar 9<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Ruby+Octopressの環境を整えたので、記事の追加とデプロイまでをまとめておく。</p>
-
-<h3>環境構築</h3>
-
-<p>詳しい設定については以下を参照。</p>
-
-<ul>
-<li><a href="http://tokkonopapa.github.com/blog/2011/12/30/octopress-on-github-and-bitbucket/">Octopressのインストールから運用管理まで</a></li>
-<li><a href="http://ktsugita.github.com/blog/2013/02/17/octopress1/">Octopressをためしてみる</a></li>
-<li><a href="http://hnakamur.github.com/blog/2012/03/03/how-to-setup-octopress/">octopressでgithubにブログ開設</a></li>
-</ul>
-
-
-<h3>記事を新規作成</h3>
-
-<p>octopressディレクトリで以下のコマンドを実行。</p>
-
-<pre><code>rake new_post['post title']
-</code></pre>
-
-<p>source/_post/以下に.markdownファイルが出来るので記事を書く</p>
-
-<h3>HTML生成</h3>
-
-<p>記事が書き終わったらHTMLを以下のコマンドで生成。</p>
-
-<pre><code>rake generate
-</code></pre>
-
-<h3>記事をリリース</h3>
-
-<p>以下のコマンドでリリース（入稿）</p>
-
-<pre><code>rake deploy
-</code></pre>
-
-<p>HTML生成とリリースを同時にするには<code>rake gen_deploy</code>を実行。</p>
-
-<p>リリースができて内容の確認ができたらgithubへpushするのを忘れないように！</p>
-
-<p>以上</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/techblog/blog/2013/03/03/markdown-sample/">Markdown Sample</a></h1>
-    
-    
-      <p class="meta">
-        
 
 
 
@@ -287,75 +202,38 @@ Sublime Text 2 Mou Mac版のみの提供。以下のサイトよりダウンロ�
   
 
 
-<time datetime="2013-03-03T21:56:00+09:00" pubdate data-updated="true">Mar 3<span>rd</span>, 2013</time>
-        
-      </p>
+<time datetime="2013-03-09T16:10:00+09:00" pubdate data-updated="true">Mar 9<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/techblog/blog/categories/markdown/'>Markdown</a>
+  
+</span>
+
+
+    </p>
     
-  </header>
-
-
-  <div class="entry-content"><p>行末にスペースを2つ入れると<br/>
-改行する。</p>
-
-<p>空行を入れると段落がわかれる。</p>
-
-<h2>使い方</h2>
-
-<h3>コード</h3>
-
-<pre><code>&lt;?php
-echo "Hello world!";
-
-function hoge(param, ...) {
-    return "hoge";
-}
-</code></pre>
-
-<ul>
-<li><code>param</code> :  <em>パラメータ</em> の説明</li>
-</ul>
-
-
-<p>パラメータはバッククォートでくくる。</p>
-
-<h3>画像</h3>
-
-<ol>
-<li><a href="http://example.com/" title="example.com">example.com</a></li>
-<li><img src="http://github.com/github.png" title="画像" alt="octocat" /></li>
-<li><a href="http://example.com/" title="インデックス型のリンク">example.com</a></li>
-<li><a href="https://github.com/"><img src="http://github.com/github.png" title="インデックス型の画像" alt="octocat" /></a></li>
-</ol>
-
-
-<p><code>1. [example.com](http://example.com/ "example.com")</code></p>
-
-<p><code>* ![octocat](http://github.com/github.png "画像")</code></p>
-
-<p><code>2. [example.com][link]</code></p>
-
-<p><code>- [![octocat][image]](https://github.com/)</code></p>
-
-<pre><code>[link]: http://example.com/ "インデックス型リンク"
-[image]: http://github.com/github.png "インデックス型画像"
-</code></pre>
-
-<h3>引用</h3>
-
-<blockquote><p>引用です。</p></blockquote>
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://kura-lab.github.com/techblog/blog/2013/03/09/markdown-editors/" data-via="kura_lab" data-counturl="http://kura-lab.github.com/techblog/blog/2013/03/09/markdown-editors/" >Tweet</a>
+  
+  
+  
 </div>
-  
-  
 
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/techblog/blog/2013/03/09/octopress-manual/" title="Previous Post: Octopress運用マニュアル">&laquo; Octopress運用マニュアル</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/techblog/blog/archives">Blog Archives</a>
-    
-  </div>
 </div>
+
 <aside class="sidebar">
   
     <section>
@@ -380,7 +258,7 @@ function hoge(param, ...) {
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/kura-lab">@kura-lab</a> on GitHub
@@ -410,7 +288,7 @@ function hoge(param, ...) {
 <section>
   <h1>Latest Tweets</h1>
   <ul id="tweets">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   <script type="text/javascript">
     $.domReady(function(){
@@ -429,6 +307,7 @@ function hoge(param, ...) {
 
   
 </aside>
+
 
     </div>
   </div>
